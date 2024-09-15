@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('aprenda\ a\ jogar.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100vh;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes logoAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo-animada {
+    width: 300px; 
+    animation: logoAnim 3.5s infinite;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    bottom: 30px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    gap: 20px; 
+}
+
+.botao-inferior-direito {
+    width: 230px; 
+    height: auto;
+    cursor: pointer;
+}
